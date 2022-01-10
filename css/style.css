@@ -1,0 +1,777 @@
+/* Global */
+
+@font-face {
+    font-family: 'valorant_font';
+    src: url(../fonts/valorant_font.woff2) format('woff2'),
+         url(../fonts/valorant_font.woff) format('woff');
+}
+
+@font-face {
+    font-family: "Tungsten"; 
+    src: url(../fonts/tungsten.woff2) format('woff2'),
+        url(../fonts/tungsten.woff) format('woff');
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:18px;
+    line-height:1.5;
+    padding:0;
+    margin:0;
+    background-color:rgb(46, 46, 46);
+}
+
+.container{
+    width:100%;
+    margin:auto;
+    overflow:hidden;
+ }
+
+.body-container{
+    width:90%;
+    margin:auto;
+    overflow:hidden;
+}
+
+ul{
+     margin:0;
+     padding:0;
+}
+
+/* Header */
+header{
+    background-color:rgb(19, 19, 19);
+    background-size:cover;
+    padding-top:30px;
+    padding-bottom:50px;
+    border-bottom:10px solid #fa4454;
+    width:100%;
+}
+
+header #logo img{
+    float:left;
+    height:120px;
+    padding-top:50px;
+    padding-left:50px;
+    padding-right:50px;
+}
+
+header #banner img{
+    float:left;
+    height:8vw;
+    padding-bottom:0;
+}
+
+header nav ul{
+    line-height:140px;
+    float:right;
+    padding-top:10px;
+    padding-right:50px;
+}
+
+header nav li{
+    display:inline;
+    box-sizing:border-box;
+    margin-left:40px;
+    font-family:'valorant_font', arial;
+    font-size:50px;
+}
+
+header li:first-child{
+    margin-left:0px;
+}
+
+header a{
+    color:seashell;
+    font-size:25px;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+
+header .current a{
+    font-weight:bold;
+    color:rgb(255, 0, 0);
+}
+
+/* Showcase */
+#showcase{
+    position:relative;
+    z-index:0;
+}
+
+#showcase video{
+    width:100%;
+    height:auto;
+}
+
+#showcase h1{
+    padding:0;
+    margin:auto;
+    width:80%;
+    color:white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align:center;
+    font-size:5vw;
+    font-family:'Tungsten', arial, georgia, sans-serif;
+    text-transform:uppercase;
+}
+
+#showcase .overlay{
+    position:absolute;
+    top:35%;
+    z-index:1;
+}
+
+/* Agent Preview */
+#agent_previews{
+    background:url(../images/generic_background.JPG);
+}
+
+#agent_previews .agent_preview{
+    float:left;
+    width:50%;
+    height:1200px;
+    padding:10px;
+    box-sizing:border-box;
+    color:whitesmoke;
+    border: 5px solid #fa4454;
+}
+
+#agent_previews .agent_preview h1{
+    text-transform:uppercase;
+    font-family:'valorant_font', arial;
+    font-weight:bold;  
+    color:#fa4454; 
+    font-size:6vw;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-bottom:none;
+}
+
+#agent_previews .agent_preview .char_icon{
+    display:block;
+    margin:auto;
+    height:100px 
+}
+
+#agent_previews .agent_header{
+    display:block;
+    padding:0;
+    margin:0;
+    text-align:center;
+}
+
+#agent_previews .agent_preview .char_artwork{
+    height:600px;   
+    text-align:center;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#agent_previews p{
+    padding:10px 10px;
+    padding-bottom:20px;
+    margin:0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:24px;
+    float:left;
+}
+
+#agent_previews .agent_preview .abilities{
+    padding-top:0;
+    padding-bottom:10px;
+}
+
+#agent_previews .agent_preview .abilities img{
+    width:3vw;
+}
+
+
+#agent_previews .agent_preview .abilities li{
+    display:inline;
+    padding-left:40px;
+}
+
+#agent_previews .agent_preview .abilities li:first-child{
+    padding-left:0;
+}
+
+/* Boxes */
+#boxes{
+    margin:auto;
+    width:100%;
+    height:1700px;
+    overflow:hidden;
+    background:url(../images/generic_background.JPG);
+    color:white;
+    padding-bottom:40px;
+}
+
+#boxes .box{
+    margin:0;
+    padding-top:30px;
+    width:90%;
+    display:block;
+    margin:auto;
+    height:33%;
+}
+
+#boxes .box a{
+    color:seashell;
+    font-family:'Tungsten';
+    font-size:25px;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+
+#boxes h2{
+    font-family:'valorant_font';
+    font-size:50px;
+}
+
+#boxes .box .desc{
+    box-sizing:border-box;
+    float:left;
+    width:50%;
+    padding-right:50px;
+    vertical-align:center;
+}
+
+#boxes .box p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#boxes .box .side_content{
+    float:right;
+    width:50%;
+    border:none;
+    padding-top:30px;
+    text-align: center;
+}
+
+#boxes .box .side_content img{
+    height:17vw;
+    border:#fc3041 2px solid;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+
+.videoWrapper iframe {
+    display:block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Maps Slideshow */
+.slideshow{
+    width:100%;
+    height:50vh;
+    position: relative; /* Since we want to place items in the slideshow with position absolute */
+    overflow:hidden;
+}
+
+.slideshow-item{
+    width:inherit;
+    height:inherit;
+    position:absolute; /* This makes each item sit on top of each other */
+    opacity:0;
+    animation: cycleImages 31s infinite;
+}
+
+.slideshow-item .map-background img{
+    width:100%;
+    height:100%;
+    object-fit:fill;
+    animation: zoom 31s infinite;
+}
+
+.slideshow-item:nth-child(1),
+.slideshow-item:nth-child(1) img{
+    animation-delay:0s;
+}
+
+.slideshow-item:nth-child(2),
+.slideshow-item:nth-child(2) img{
+    animation-delay:5s;
+}
+
+.slideshow-item:nth-child(3),
+.slideshow-item:nth-child(1) img{
+    animation-delay:10s;
+}
+
+.slideshow-item:nth-child(4),
+.slideshow-item:nth-child(4) img{
+    animation-delay:15s;
+}
+
+.slideshow-item:nth-child(5),
+.slideshow-item:nth-child(5) img{
+    animation-delay:20s;
+}
+
+.slideshow-item:nth-child(6),
+.slideshow-item:nth-child(6) img{
+    animation-delay:25s;
+}
+
+.slideshow-item:nth-child(7),
+.slideshow-item:nth-child(7) img{
+    animation-delay:30s;
+}
+
+.slideshow-item-box{
+    margin:auto;
+    max-width:50%;
+    position:absolute;
+    top:50%;
+    left:0%;
+    transform:translateY(-50%);
+    background-color:rgba(0,0,0,0.4);
+    padding: 50px;
+}
+
+.slideshow-item .minimap img{
+    float:right;
+    width:40%;
+}
+
+.slideshow-item-text{
+    width:50%;
+    float:left;
+    color:white;
+}
+
+.slideshow-item-text h2{
+    font-size:5rem;
+    font-family:Tungsten, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin-bottom:0px;
+}
+
+.slideshow-item-text h4{
+    font-size:2rem;
+    font-family:Tungsten, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin-top:0px;
+}
+
+.slideshow-item-text p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:1rem;
+    letter-spacing:1px;
+}
+
+@keyframes cycleImages {
+    25%{
+        opacity:1;
+    }
+    40%{
+        opacity:0;
+    }
+}
+
+@keyframes zoom{
+    100%{
+        transform:scale(1.3);
+    }
+
+}
+
+/* Agent Body */
+.agent-body{
+    background:url(../images/generic_background.JPG);
+}
+
+/* Agent Showcase */
+#agent-showcase{
+    position:relative;
+    overflow:hidden; /*This ensures agent showcase's height is not 0 due to floated elements */
+    margin:auto;
+    height:auto;
+    padding: 5% 5%;
+}
+
+#agent-nav{
+    position:relative;
+    float:left;
+    width:30%;
+}
+
+#agent-nav ul{
+    list-style-type:none;
+}
+
+#agent-nav a{
+    text-transform:uppercase;
+    text-decoration:none;
+    color:#fc3041;
+}
+
+#agent-nav li{
+    font-family:"valorant_font";
+    line-height:50px;
+    font-size:30px;
+}
+
+#agent-nav .current a{
+    font-weight:bolder;
+    color:white;
+}
+
+
+.agent-body .agent-artwork{    
+    display:inline;
+    width:33%;
+}
+
+.agent-body .agent-artwork img{ 
+    height:600px;
+}
+
+.agent-body .agent-desc{
+    margin:auto;
+    height:auto;
+    float:right;
+    width:33%;
+    color:white;
+}
+
+.agent-body .agent-desc h2{
+    font-family: "Tungsten", Arial, Helvetica, sans-serif;
+    font-size:120px;
+    text-transform:uppercase;
+}
+
+.agent-body .agent-desc h3{
+    font-family: "Tungsten", Arial, Helvetica, sans-serif;
+    font-size:60px;
+}
+
+.agent-body .agent-desc .desc-images img{
+    display:inline;
+    height:5vw;
+}
+
+.agent-body .agent-desc h5{
+    text-align:center;
+    background:#fa4454;
+    padding: 20px 20px 20px 20px;
+    margin:20px 0px;
+    font-style:italic;
+}
+
+.agent-body .agent-desc p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Abilities Showcase */
+#abilities-showcase{
+    display:block;
+    margin:auto;
+    overflow:hidden;
+}
+
+#abilities-showcase h2{
+    text-transform:uppercase;
+    text-align:center;
+    font-family: "Tungsten", Arial, Helvetica, sans-serif;
+    font-size:150px;
+    color:white;
+    width:100%;
+    background:rgb(19, 19, 19);
+}
+
+#abilities-showcase .ability-preview{
+    display:block;
+    margin:auto;
+    overflow:hidden;
+    padding:100px 0px;
+}
+
+#abilities-showcase .ability-preview img{
+    margin:auto;
+    display:block;
+    width:100px;
+}
+
+#abilities-showcase .ability-preview h5{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:50px;
+    color:white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align:center;
+}
+
+#abilities-showcase .ability-preview .ability-desc{
+    width:50%;
+    float:left;
+    margin:auto;
+    padding: 10px 10%;
+    color:white;
+}
+
+#abilities-showcase .ability-preview video{
+    width:50%;
+    float:right;
+}
+
+
+
+/* Footer */
+footer{
+    color:rgb(182, 182, 182);
+    background-color:rgb(19, 19, 19);
+    text-align:center;
+    font-size:15px;
+    padding-top:20px;
+    padding-bottom:30px;
+    width:100%;
+}
+
+footer button{
+    display:block;
+    margin:auto;
+    text-align:center;
+    background-color:rgb(44, 44, 44);
+    font-family:'valorant_font', arial;
+    color:#fc3041;
+    font-size:30px;
+    text-transform:uppercase;
+    font-weight:bold;
+    padding:10px 20px;
+}
+
+footer #RIOT_LOGO{
+    height:90px;
+    padding-left:30px;    
+}
+
+footer p{
+    padding-top:20px;
+}
+
+footer a{
+    color:rgb(255, 255, 255);
+    font-size:25px;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight:bold;
+}
+
+footer #footer_icons{
+    padding-top:20px;
+}
+
+/* Resizing */
+@media(max-width:1750px){
+
+    /* GLOBAL */
+    header nav ul
+    {   
+        padding:0;
+        float:none;
+        text-align:center;
+        padding-top:20px;
+    }
+
+    header #logo img,
+    header #banner img{
+        float:none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+}
+
+@media(max-width:1330px){
+    /* AN AGENT PAGE */
+    /* Agent Showcase */  
+    #agent-nav{
+        float:left;
+        width:50%;
+    }
+    
+    
+    .agent-body .agent-artwork{    
+        float:right;
+        width:50%;
+    }
+    
+    
+    .agent-body .agent-desc{
+        width:100%;
+    }
+    
+    .agent-body .agent-desc h2{
+        text-align:center;
+    }
+    
+    .agent-body .agent-desc h3{
+        text-align: center;
+    }
+    
+    .agent-body .agent-desc .desc-images img{
+        height:150px;
+    }
+
+    .agent-body .agent-desc .desc-images{
+        text-align:center;
+        padding-bottom:40px;
+    }
+    
+    /* Abilities Showcase */
+    
+    #abilities-showcase .ability-preview{
+        padding:40px 0px;
+    }
+    
+    #abilities-showcase .ability-preview .ability-desc{
+        float:none;
+        display:block;
+        width:100%;
+        padding:none;
+    }
+
+    #abilities-showcase .ability-preview .ability-desc p{
+        padding: 10px 0px;
+    }
+    
+    #abilities-showcase .ability-preview video{
+        float:none;
+        display:block;
+        margin:auto;
+        width:95%;
+    }
+}
+
+@media(max-width:1100px){
+
+    /* HOME */
+    #boxes{
+        height:2500px;
+    }
+    
+    #boxes .box .desc,
+    #boxes .box .side_content{
+        float:none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top:20px;
+        padding-bottom:20px;
+        width:100%;
+    }
+
+    #boxes .box .videoWrapper .iframe{
+        border:0;
+        padding-bottom:400px;
+    }
+
+    #boxes .box .side_content img{
+        height:325px;
+    }
+
+}
+
+@media(max-width:961px){
+
+    /* HOME */
+    #boxes{
+        height:2750px;
+    }
+
+    /* AGENTS PAGE */
+    #agent_previews .agent_preview
+    {
+        float:none;
+        text-align:center;
+        width:100%;
+    } 
+
+
+    #agent_previews .agent_preview h1{
+        font-size:100px;
+    }
+
+    #agent_previews .agent_preview .abilities img{
+        width:100px;
+    }
+
+    #boxes .box .side_content img{
+        height:50vw;
+    }
+
+    /* MAPS */
+    .slideshow-item .map-background{
+        display:block;
+    }
+
+    .slideshow-item-box{
+        position:relative;
+        top:30%;
+        display:block;
+        margin:auto;
+        max-width:100%;
+        background-color:rgba(0,0,0,0);
+        height:600px;
+    }
+
+    .slideshow-item-box{
+        margin:auto;
+        width:100%;
+    }
+    
+    .slideshow-item .minimap img{
+        float:none;
+        display:block;
+        margin:auto;
+        width:30%;
+    }
+    
+    .slideshow-item-text{
+        float:none;;
+        width:100%;
+    }
+
+    .slideshow{
+        height:1000px;
+    }
+}
+
+@media(max-width:900px){
+    /* AN AGENT PAGE */
+    /* Agent Showcase */  
+    #agent-nav{
+        float:none;
+        width:100%;
+        text-align: center;
+    }
+    
+    .agent-body .agent-artwork{    
+        float:none;
+        width:100%;
+        padding:0px 200px;
+    }
+
+    .agent-body .agent-artwork img{
+       margin:auto;
+       display:block; 
+    }
+}
